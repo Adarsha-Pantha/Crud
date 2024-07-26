@@ -26,6 +26,6 @@ const upload = multer({ storage: storage });
 const postController = require('../controllers/postController');
 
 // Routes setup
-routes.post('/create-post', upload.single('image'), postController.createPost);
+routes.post('/create-postt', upload.single('image'), postController.createPost);
 
 module.exports = routes;
